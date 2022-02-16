@@ -6,8 +6,8 @@ public class Character2D : MonoBehaviour
 {
     private Rigidbody2D _playerRB;
 
-    private float moveSpeed;
-    private float jumpForce;
+    public float moveSpeed;
+    public float jumpForce;
     private bool isJumping;
     private float moveHorizontal;
     private float moveVertical;
@@ -16,8 +16,7 @@ public class Character2D : MonoBehaviour
     {
         _playerRB = gameObject.GetComponent<Rigidbody2D>();
 
-        moveSpeed = 1f;
-        jumpForce = 25f;
+        
         isJumping = false;
     }
 
