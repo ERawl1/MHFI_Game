@@ -25,6 +25,7 @@ public class Character2D : MonoBehaviour
     {
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         moveVertical = Input.GetAxisRaw("Vertical");
+        FlipCharacter();
     }
 
     void FixedUpdate()
@@ -54,6 +55,16 @@ public class Character2D : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isJumping = true;
+        }
+    }
+
+    private void FlipCharacter()
+    {
+        bool playerIsMoving = Mathf.Abs(_playerRB.velocity.x) > 0.1;
+
+        if (playerIsMoving)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(_playerRB.velocity.x)* 1, 1);
         }
     }
 }
