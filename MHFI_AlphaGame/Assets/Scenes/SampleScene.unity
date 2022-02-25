@@ -1903,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2697994971241194661, guid: 02ac017b4ac04124f92639c3c4871eda, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2697994971241194663, guid: 02ac017b4ac04124f92639c3c4871eda, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1946,6 +1950,10 @@ PrefabInstance:
     - target: {fileID: 2697994971241194663, guid: 02ac017b4ac04124f92639c3c4871eda, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2697994971241194713, guid: 02ac017b4ac04124f92639c3c4871eda, type: 3}
+      propertyPath: jumpForce
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2697994971241194716, guid: 02ac017b4ac04124f92639c3c4871eda, type: 3}
       propertyPath: cam
