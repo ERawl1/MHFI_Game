@@ -145,6 +145,8 @@ GameObject:
   - component: {fileID: 2697994971241194713}
   - component: {fileID: 2697994971241194716}
   - component: {fileID: 2697994971241194717}
+  - component: {fileID: 700507370}
+  - component: {fileID: 700507371}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -295,7 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  jumpForce: 20
+  jumpForce: 22
 --- !u!114 &2697994971241194716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +316,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   grappleSpeed: 150
-  grappleLength: 10
+  grappleLength: 20
   maxPoints: 1
 --- !u!114 &2697994971241194717
 MonoBehaviour:
@@ -335,6 +337,31 @@ MonoBehaviour:
     m_Bits: 64
   atkRadius: 0.5
   damage: 2
+--- !u!114 &700507370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697994971241194661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7c1a406af22a64d81fa5b664c57c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &700507371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697994971241194661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe1825d45c554146bbdd10cfbcbdaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Prb: {fileID: 2697994971241194712}
 --- !u!1 &2697994971424280244
 GameObject:
   m_ObjectHideFlags: 0
