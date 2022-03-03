@@ -25,7 +25,7 @@ public class Character2D : MonoBehaviour
     {
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         moveVertical = Input.GetAxisRaw("Vertical");
-        FlipCharacter();
+       // FlipCharacter();
     }
 
     void FixedUpdate()
@@ -68,7 +68,7 @@ public class Character2D : MonoBehaviour
         }
     }
 
-    private void FlipCharacter()
+    /*private void FlipCharacter()
     {
         bool playerIsMoving = Mathf.Abs(_playerRB.velocity.x) > 0.1;
 
@@ -76,5 +76,5 @@ public class Character2D : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(_playerRB.velocity.x)* 1, 1);
         }
-    }
+    }*/
 }
